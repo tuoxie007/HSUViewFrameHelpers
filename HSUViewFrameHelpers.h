@@ -13,6 +13,8 @@
 #define ccs(w, h) CGSizeMake(floorf(w), floorf(h))
 #define edi(top, left, bottom, right) UIEdgeInsetsMake(floorf(top), floorf(left), floorf(bottom), floorf(right))
 
+#define WinSize [UIScreen mainScreen].bounds.size
+
 @interface UIView (HSUFrameHelpers)
 
 @property (nonatomic, readwrite) CGFloat left, right, top, bottom, width, height;

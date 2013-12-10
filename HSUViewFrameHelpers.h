@@ -22,6 +22,9 @@
 @property (nonatomic, readwrite) CGPoint leftTop, leftBottom, rightTop, rightBottom;
 @property (nonatomic, readonly) CGPoint boundsCenter;
 @property (nonatomic, readwrite) CGSize size;
+@property (nonatomic, readonly) CGFloat largerSize; // max of width & height
+@property (nonatomic, readonly) CGFloat aspectRatio; // width / height
+
 
 - (NSString *)frameStr;
 

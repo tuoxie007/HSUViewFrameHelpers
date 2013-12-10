@@ -153,4 +153,14 @@
     return NSStringFromCGRect(self.frame);
 }
 
+- (CGFloat)largerSize
+{
+    return MAX(self.width, self.height);
+}
+
+- (CGFloat)aspectRatio
+{
+    return self.width / self.height;
+}
+
 @end
